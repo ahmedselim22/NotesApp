@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_noteItem"
+    android:elevation="@dimen/_8sdp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/_20sdp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:id="@+id/tv_noteItem_title"
+            android:padding="@dimen/_4sdp"
+            android:gravity="start|center_vertical"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:text="content"
+            android:id="@+id/tv_noteItem_content"
+            android:textColor="@color/black"
+            android:padding="@dimen/_4sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:text="content"
+            android:gravity="end"
+            android:id="@+id/tv_noteItem_date"
+            android:padding="@dimen/_4sdp"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
